@@ -12,6 +12,7 @@ nav {
 }
 
 
+
 #nav-start {
     display: flex;
     justify-content: center;
@@ -93,3 +94,13 @@ a {
     margin: 0 10px;
 }
 
+aside {
+    height: 100%;
+    width: 25%;
+    float: right;
+}
+
+#primary {
+    width: 70%;
+    padding: 0 20px;
+}

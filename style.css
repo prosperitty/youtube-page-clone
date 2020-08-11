@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -10,8 +11,6 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 #nav-start {
     display: flex;
@@ -79,7 +78,8 @@ input[type=text] {
 
 #create-vid-icon,
 #grid-icon,
-#bell-icon {
+#bell-icon,
+#three-dots {
     color: gray;
     height: 30px;
     width: 20px;
@@ -96,14 +96,15 @@ a {
 }
 
 #primary {
-    width: 70%;
-    padding: 0 30px;
+    width: 65%;
+    padding: 0 2.5%;
 }
 
 #secondary {
     height: 100%;
-    width: 25%;
+    width: 30%;
     float: right;
+    border: 1px solid rebeccapurple;
 }
 
 /* VIDEO WRAPPER IS AN INTRINSIC RATIO TECHNIQUE */
@@ -123,12 +124,58 @@ a {
 
 h3 {
     margin: 0;
+    font-weight: 400;
 }
 
 #video-title {
-    margin: 15px 0;
+    margin: 15px 0 8px 0;
 }
 
 #hashtags {
+    color: royalblue;
     font-size: 12px;
+}
+
+#info {
+    color: rgb(94, 94, 94);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#dot {
+    margin: 0 5px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+hr {
+    color: rgba(255, 255, 255, 0.206);
+}
+
+.icon {
+    padding-right: 8px;
+}
+
+#info-left {
+    font-weight: 550;
+}
+
+#info-right {
+    font-weight: 600;
+}
+
+.text {
+    text-transform: uppercase;
 }

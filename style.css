@@ -3,6 +3,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    background-color: rgba(252, 252, 252, 0.726);
+}
+
 nav {
     background-color: white;
     height: 56px;
@@ -70,7 +74,7 @@ input[type=text] {
     flex-shrink: 0;
 }
 
-#profile-pic {
+.profile-pic {
     height: 30px;
     width: 30px;
     border-radius: 100%;
@@ -87,7 +91,7 @@ input[type=text] {
     flex-shrink: 0;
 }
 
-a {
+.picture-link {
     display: flex;
     align-items: center;
     height: 30px;
@@ -97,12 +101,14 @@ a {
 
 #primary {
     width: 65%;
+    min-width: 360px;
     padding: 0 2.5%;
 }
 
 #secondary {
     height: 100%;
     width: 30%;
+    min-width: 166px;
     float: right;
     border: 1px solid rebeccapurple;
 }
@@ -174,8 +180,33 @@ hr {
 
 #info-right {
     font-weight: 600;
+    flex-shrink: 0.5;
 }
 
 .text {
     text-transform: uppercase;
 }
+
+#like-count,
+#dislike-count {
+    border-bottom: 2px solid gray
+}
+
+#creator-container {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    flex-grow: 2;
+}
+
+#picture-container {
+    display: flex;
+    width: 60px;
+}
+
+#subscribe-button {
+    display: flex;
+    flex-grow: 2;
+    justify-content: end;
+}
+

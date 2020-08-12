@@ -260,7 +260,7 @@ hr {
     margin-left: 30px;
 }
 
-#comment-container {
+#comment-input-container {
     display: flex;
     align-items: center;
     width: 100%;
@@ -273,3 +273,30 @@ hr {
     width: 100%;
     outline: none
 }
+
+.comment-container {
+    display: flex;
+    margin: 20px 0;
+}
+
+.interactivity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.user {
+    display: inline-block;
+    padding: 0 16px;
+
+}
+
+#random {
+    display: inline-block;
+}
+
+#authors-comment {
+    margin: 5px 0;
+}
+
+

@@ -105,14 +105,6 @@ input[type=text] {
     padding: 0 2.5%;
 }
 
-#secondary {
-    height: 100%;
-    width: 30%;
-    min-width: 166px;
-    float: right;
-    border: 1px solid rebeccapurple;
-}
-
 /* VIDEO WRAPPER IS AN INTRINSIC RATIO TECHNIQUE */
 #videoWrapper {
     position: relative;
@@ -182,10 +174,8 @@ hr {
 #info-right {
     font-weight: 600;
     flex-shrink: 0.5;
-}
-
-.text {
     text-transform: uppercase;
+
 }
 
 #like-count,
@@ -347,4 +337,34 @@ hr {
     margin-right: 10px;
 }
 
+#secondary {
+    width: 30%;
+    padding: 0 10px;    
+    float: right;
+}
 
+#aside-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommended-vid-container {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    padding: 10px 0;
+}
+
+.thumbnail {
+    height: 90px;
+    width: 150px;
+}
+
+.recommended-description {
+    font-size: 13px;
+}
+
+.recommended-description p {
+    white-space: nowrap;
+    margin: 0;
+}

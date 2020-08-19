@@ -4,52 +4,43 @@ body {
 }
 
 main {
-    background-color: rgba(252, 252, 252, 0.726);
+    background-color: rgba(252,252,252,0.726);
 }
 
 nav {
-    background-color: white;
-    height: 56px;
-    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 56px;
+    padding: 0 10px;
+
+    background-color: white;
 }
 
-#nav-start {
-    display: flex;
-    justify-content: center;
-    white-space: nowrap ;
-}
-
-#nav-middle {
-    display: flex;
-    justify-content: center;
-    white-space: nowrap ;
-    max-width: 600px;
-    min-width: 250px;
-}
-
-#nav-end {
+.add-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
 }
 
+#nav-middle {
+    max-width: 600px;
+    min-width: 250px;
+}
+
 #hamburger-icon {
     height: 30px;
     width: 20px;
     padding: 0 10px;
+
     color: gray;
-    flex-shrink: 0;
 }
 
 #youtube-logo {
     width: 80px;
     margin-right: 100px;
     margin-left: 10px;
-    flex-shrink: 0;
 }
 
 input[type=text] {
@@ -57,21 +48,24 @@ input[type=text] {
     width: 550px;
     padding: 2px 10px;
     margin: 0;
-    border: 1px solid rgb(192, 192, 192);
+
+    font-size: 16px;
+
+    border: 1px solid rgb(192,192,192);
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    font-size: 16px;
 }
 
 #search-button {
+    flex-shrink: 0;
     height: 32px;
     width:  60px;
-    border-width: 1px 1px 1px 0px;
+
+    border-width: 1px 1px 1px 0;
     border-style: solid;
-    border-color: rgb(192, 192, 192);
+    border-color: rgb(192,192,192);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
-    flex-shrink: 0;
 }
 
 #profile-pic {
@@ -91,12 +85,13 @@ input[type=text] {
 #create-vid-icon,
 #grid-icon,
 #bell-icon,
-#three-dots {
-    color: gray;
+#three-dots-icon {
+    flex-shrink: 0;
     height: 30px;
     width: 20px;
     margin: 0 15px;
-    flex-shrink: 0;
+
+    color: gray;
 }
 
 #primary {
@@ -120,32 +115,27 @@ input[type=text] {
     height: 100%;
 }
 
+#video-title-header {
+    margin: 15px 0 8px 0;
+}
+
+#hashtags {
+    font-size: 12px;
+    color: royalblue;
+}
+
 h3 {
     margin: 0;
     font-weight: 400;
 }
 
-#video-title {
-    margin: 15px 0 8px 0;
-}
-
-#hashtags {
-    color: royalblue;
-    font-size: 12px;
-}
-
-#info {
-    color: rgb(94, 94, 94);
-    font-size: 14px;
+#info-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
 
-.flex {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+    font-size: 14px;
+    color: rgb(94, 94, 94);
 }
 
 #dot {
@@ -167,15 +157,9 @@ hr {
     padding-right: 8px;
 }
 
-#info-left {
-    font-weight: 550;
-}
-
 #info-right {
     font-weight: 600;
-    flex-shrink: 0.5;
     text-transform: uppercase;
-
 }
 
 #like-count,
@@ -187,28 +171,13 @@ hr {
     display: flex;
     align-items: center;
     margin: 12px 0;
-    flex-grow: 2;
+
+    font-size: 14px;
     color: rgb(94, 94, 94);
 }
 
 #picture-container {
-    display: flex;
     width: 60px;
-}
-
-#subscribe-button {
-    display: flex;
-    flex-grow: 2;
-    justify-content: end;
-}
-
-#creator-info > div a {
-    color: black;
-    text-decoration: none;
-}
-
-#creator-info {
-    font-size: 14px;
 }
 
 #creator-pic {
@@ -217,14 +186,18 @@ hr {
     border-radius: 100%;
 }
 
-#subscribe-button button {
-    height: 35px;
-    width: 105px;
-    border: none;
-    border-radius: 2px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
+#creator-info > div a {
+    color: black;
+    text-decoration: none;
+}
+
+#subscribe-button-container {
+    display: flex;
+    flex-grow: 2;
+    justify-content: end;
+}
+
+#subscribe-button {
     color: white;
     background-color: #cc0000;
 }
@@ -243,11 +216,12 @@ hr {
 #sort-comments {
     display: flex;
     align-items: center;
-    color: rgb(109, 109, 109);
-    text-transform: uppercase;
+    margin-left: 30px;
+
     font-size: 14px;
     font-weight: 600;
-    margin-left: 30px;
+    color: rgb(109, 109, 109);
+    text-transform: uppercase;
 }
 
 #comment-input-container {
@@ -257,10 +231,11 @@ hr {
 }
 
 #comment-input {
-    border-width: 0 0 1px 0;
-    padding: 0 0;
+    padding: 0;
     margin-left: 20px;
     width: 100%;
+
+    border-width: 0 0 1px 0;
     outline: none
 }
 
@@ -269,26 +244,24 @@ hr {
     justify-content: flex-end;
 }
 
-#submit-comment-button {
+.button {
     height: 35px;
     width: 100px;
-    border: none;
-    border-radius: 2px;
-    text-transform: uppercase;
+
     font-size: 14px;
     font-weight: 600;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 2px;
+}
+
+#submit-comment-button {
     color: white;
     background-color: rgb(197, 197, 197);
 }
 
 #cancel-comment-button {
-    height: 35px;
-    width: 100px;
-    border: none;
-    border-radius: 2px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
     color: rgb(97, 96, 96);
     background-color: white;
 }
@@ -298,23 +271,16 @@ hr {
     margin: 25px 0;
 }
 
-.interactivity {
+.votes {
     display: flex;
     align-items: center;
     font-size: 13px;
-    text-transform: uppercase;
     color: rgb(97, 96, 96);
-
+    text-transform: uppercase;
 }
 
 .user {
-    display: inline-block;
     padding: 0 16px;
-
-}
-
-#random {
-    display: inline-block;
 }
 
 .comment-author {
@@ -338,9 +304,9 @@ hr {
 }
 
 #secondary {
+    float: right;
     width: 30%;
     padding: 0 10px;    
-    float: right;
 }
 
 #aside-header {
@@ -356,8 +322,8 @@ hr {
 }
 
 .thumbnail {
-    height: 90px;
     width: 150px;
+    height: 90px;
 }
 
 .recommended-description {
@@ -365,6 +331,6 @@ hr {
 }
 
 .recommended-description p {
-    white-space: nowrap;
     margin: 0;
+    white-space: nowrap;
 }

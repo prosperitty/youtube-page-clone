@@ -334,3 +334,29 @@ hr {
     margin: 0;
     white-space: nowrap;
 }
+
+@media (max-width: 850px) {
+    aside {
+        display: none;
+    }
+
+    #search-bar,
+    #search-button {
+        display: none;
+    }
+
+    #nav-middle {
+        max-width: 0;
+        min-width: 0;
+    }
+
+    #youtube-logo {
+        margin-right: 0;
+    }
+
+    #primary {
+        width: 95%;
+        min-width: 360px;
+        padding: 0 2.5%;
+    }
+}

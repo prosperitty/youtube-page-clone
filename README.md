@@ -4,7 +4,7 @@
 
 This project is a replicate version of a youtube video page using HTML/CSS only.
 
- ## Main Focus
+### Main Focus
 
 - Emebedding Videos and Images
 - Responsive design
